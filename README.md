@@ -6,8 +6,8 @@ This is a Python module that will daemonize your Python script so it can continu
 
 # Usage
 
-```import daemon
-daemon.start()
+```import aiodaemon
+aiodaemon.start()
 
 ... 
 rest code will be executed as daemon
@@ -30,14 +30,14 @@ rest code will be executed as daemon
 
 ```
 ...
-logger = daemon.getLogger('test')
+logger = aiodaemon.getLogger('test')
 
 log.info('info message')
 log.error('error message')
 log.debug('debug message')
 
 ...
-logger.setLevel(daemon.WARNING)
+logger.setLevel(aiodaemon.WARNING)
 ...
 ```
 
